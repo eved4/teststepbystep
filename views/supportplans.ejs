@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <%- include ("partials/head") -%>
+    <% var datas =JSON.stringify(plans) %>
+    <% console.log(datas) %>
+</head>
+
+<body id="page-top">
+    <%- include ("partials/menu") %>
+    <section class="page-section portfolio" id="portfolio"></section>
+    
+
+    <div id="accordianId" role="tablist" aria-multiselectable="true">
+        <% plans.forEach(function(data,i) { %>
+            <% console.log(data) %>
+            <div class="card">
+                <div class="card-header" role="tab" id="section<%= i %>HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordianId" data-target="#section<%= i %>ContentId" aria-expanded="true" aria-controls="section<%= i %>ContentId">
+                  <%= data._fields.infrm__record_type_name__c %>
+                </a>
+                    </h5>
+                </div>
+                <div id="section<%= i %>ContentId" class="collapse in" role="tabpanel" aria-labelledby="section<%= i %>HeaderId">
+                    <div class="card-body">
+                        <%= data._fields.summary_of_session__c %>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+        
+    </div>
+
+    
+    
+    <%- include ("partials/footer") -%>
+</body>
+</html>

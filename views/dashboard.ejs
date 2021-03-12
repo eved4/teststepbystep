@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <%- include ("partials/head") -%>
+</head>
+
+<body id="page-top">
+    <%- include ("partials/menu") %>
+    <h1>This is dashboard page</h1>
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+               
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <a href=/supportplans>
+                        <div class="portfolio-item mx-auto" data-toggle="modal">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i>Support Plans</i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/leaf1.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" href="/documents">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i>Documents</i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/documents1.png" alt="" />
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" href="/notifications">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i>Notifications</i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/notifications1.png" alt="" />
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="page-section bg-primary text-white mb-0" id="supportservices">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Support Services</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <h3>WHAT DO WE DO?</h3>
+            Youth AIMS is an open access advice and information service which offers guidance to young people and their families in areas such as housing, homelessness, money and debt management, relationships, employment, sexual health and well-being.
+            <h3>WHO FOR?</h3>
+            We offer a free, confidential advice and support service for anyone aged 11-25. We are here to listen and provide support and guidance on a number of issues including:
+            <br />
+            <br />
+            <h5>Housing options (18-25)</h5>
+            <p style="margin-left: 40px"> Our friendly team can help you explore your housing options. This could mean signposting you to your local housing authority or referring you to appropriate supported accommodation providers (dependent on your local connection)</p>
+            <h5>Rent deposits (18-25)</h5>
+            <p style="margin-left: 40px">Available for young people aged 18  25 years old with a local connection to Rushmoor.</p>
+            <h5>Benefits advice (16-25)</h5>
+            <p style="margin-left: 40px">We can assist you in understanding benefits and help guide you through claiming benefits online.</p>
+            <h5>Sexual Health advice and guidance (13-25)</h5>
+            <p style="margin-left: 40px">Staff are trained in giving young people sexual health advice, the distribution of condoms, pregnancy tests and much more.</p>
+            <h5>Food parcels and showering facilities (16-25)</h5>
+            <p style="margin-left: 40px">There is access to a shower room for people who are street homeless or who do not have access to water and electricity. We can give out toiletries and food parcels for those who are in need.</p>
+            <h5>Health and well-being one-to-ones (11-25)</h5>
+            <p style="margin-left: 40px">Book by appointment only to discuss health and well-being issues. (Please note: this is not a counselling service)</p>
+            <br />	
+            <p>We also can assist you with Family and Relationships, Form-filling and Correspondence, and Education, Training and Employment.
+            Contact us or use the Live Chat button for advice and information
+            01252 346105
+            <a href="mailto:YouthAIMS@stepbystep.org.uk" style="color:#D7DF01">YouthAIMS@stepbystep.org.uk</a></p>   
+        </div>
+    </section>
+
+    <%- include ("partials/footer") -%>
+
+
+
+    <img src="https://encrypted-tbn0.gstatic.com/ 
+    images?q=tbn%3AANd9GcQ5PdxXFw4u3BRG4166i7Nbk 
+    x0VyGGNt0hWc3loNeD7GIL4nbbo&usqp=CAU">
+
+    
+    <h1>This is home page</h1>
+
+    <li><a href="/register">Sign up!!</a></li>
+    <li><a href="/login.ejs">Login</a></li>
+    <li><a href="/logout">Logout</a></li>
+
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+
+    
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
